@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise 1</title>
+    <style>
+        .container{
+            border: 2px solid #000;
+            border-radius: 10px;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            gap: 5px;
+        }
+        .left, .right{
+            margin: 10px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .left{
+            background-color: gray;
+        }
+        .right{
+            background-color: bisque;
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+            .left{
+                height: 30vh;
+            }
+            .right{
+                height: 65vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>left</h1>
+        </div>
+        <div class="right">
+            <h1>right</h1>
+        </div>
+    </div>
+</body>
+</html>
