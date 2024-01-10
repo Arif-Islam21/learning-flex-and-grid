@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practise 4</title>
+    <style>
+      .btn-primary {
+        background-color: rgba(0, 0, 255, 0.59);
+        color: white;
+        border-radius: 10px;
+        height: 3em;
+        border: none;
+        margin: 20px;
+        padding: 10px;
+      }
+      .resturant {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin: 10px;
+      }
+      .resturant div{
+        padding: 30px;
+      }
+      img{
+        width: 250px;
+        margin: 10px;
+        height: 300px;
+      }
+      @media screen and (max-width:576px) {
+        .container{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .resturant{
+            display: flex;
+            flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="resturant">
+        <img src="images/healthy.jpg" alt="" />
+        <div>
+          <h2>Post Title will be here</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus assumenda laborum nesciunt! Tenetur ab impedit
+            voluptatem perspiciatis accusantium ea, debitis saepe excepturi
+            doloremque cupiditate, ut necessitatibus facilis, possimus inventore
+            ad? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Doloremque impedit nobis voluptates molestiae mollitia fugiat enim
+            voluptatem pariatur dolore qui culpa reiciendis libero fuga modi
+            ducimus molestias nihil quis exercitationem architecto quam vero,
+            quia itaque excepturi beatae? Recusandae, molestias laudantium.
+          </p>
+          <button class="btn-primary">Read More</button>
+        </div>
+      </div>
+      <div class="resturant">
+        <img src="images/images.jpg" alt="healthy thor" />
+        <div>
+          <h2>Post title goes here</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus assumenda laborum nesciunt! Tenetur ab impedit
+            voluptatem perspiciatis accusantium ea, debitis saepe excepturi
+            doloremque cupiditate, ut necessitatibus facilis, possimus inventore
+            ad?
+          </p>
+          <button class="btn-primary">Read More</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
