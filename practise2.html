@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise task 2</title>
+    <style>
+        .item{
+            height: 20vh;
+            border-radius: 5px;
+            color: #fff;
+            padding: 3vh;
+            margin: 1vh;
+
+        }
+        .red{
+            background-color: red;
+        }
+        .orange{
+            background-color: orange;
+        }
+        .violet{
+            background-color: violet;
+        }
+        .grey{
+            background-color: grey;
+        }
+        @media screen and (min-width:576px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(2 , 1fr);
+                height: 90vh;
+            }
+            .item{
+                height: 100%;
+            }
+            .orange{
+                height: 40vh;
+            }
+            .last-two{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                height: 45%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red item">
+            <h1>1</h1>
+        </div>
+        <div class="other">
+            <div class="orange item">
+                <h1>2</h1>
+            </div>
+            <div class="last-two">
+                <div class="violet item">
+                    <h1>3</h1>
+                </div>
+                <div class="grey item">
+                    <h1>4</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
