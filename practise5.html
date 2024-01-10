@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practise 5</title>
+    <style>
+      .blog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      img {
+        width: 100%;
+        height: 50vh;
+      }
+      .image-detail{
+        padding: 0 40px;
+      }
+      @media screen and (max-width:576px) {
+        .blog{
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+            text-align: start;
+        }
+        .blog-2{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="blog">
+        <div class="image">
+          <img src="images/healthy.jpg" alt="" />
+        </div>
+        <div class="image-detail">
+          <h2>Why do we use it?</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis,
+            quos aliquam sed vitae enim fuga officiis eum culpa eveniet nostrum.
+            Autem sunt at voluptate quod non quisquam blanditiis, consequatur
+            assumenda.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequuntur explicabo eaque illo iure maxime asperiores perferendis
+            suscipit corporis aliquid iusto quibusdam delectus blanditiis vel
+            unde et quo laborum, eius laboriosam!
+          </p>
+        </div>
+      </div>
+      <div class="blog blog-2">
+        <div class="image-detail">
+          <h2>Why do we use it?</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis,
+            quos aliquam sed vitae enim fuga officiis eum culpa eveniet nostrum.
+            Autem sunt at voluptate quod non quisquam blanditiis, consequatur
+            assumenda.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequuntur explicabo eaque illo iure maxime asperiores perferendis
+            suscipit corporis aliquid iusto quibusdam delectus blanditiis vel
+            unde et quo laborum, eius laboriosam!
+          </p>
+        </div>
+        <div class="image">
+          <img src="images/images.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
